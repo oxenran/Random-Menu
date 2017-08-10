@@ -19,7 +19,7 @@ menu_du_jour = cooking_method.shuffle.zip(adjectives.shuffle, food_type.shuffle)
 num = 1
 quest.times {
   plate_du_jour =  menu_du_jour[num - 1]
-  puts "#{num}. #{plate_du_jour[0]} #{plate_du_jour[1]} #{plate_du_jour[2]}"
+  puts "#{num}. #{plate_du_jour[0].capitalize} #{plate_du_jour[1].capitalize} #{plate_du_jour[2].capitalize}"
   num += 1
 }
 
