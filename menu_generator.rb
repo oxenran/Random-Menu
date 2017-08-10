@@ -1,11 +1,11 @@
-adjectives = [ "smothered", "ambrosial", "epicurean", "balsamic", "fra diavolo",
-  "etoufee", "alfredo", "caramelized", "marinated", "honeyed" ]
+adjectives = [ "Smothered", "Ambrosial", "Epicurean", "Balsamic", "Fra Diavolo",
+  "Etoufee", "Alfredo", "Caramelized", "Marinated", "Honeyed" ]
 
-cooking_method = [ "sous vide", "fried", "roasted", "steamed", "sauteed",
-    "grilled", "smoked", "poached", "confit", "simmered"]
+cooking_method = [ "Sous Vide", "Fried", "Roasted", "Steamed", "Sauteed",
+    "Grilled", "Smoked", "Poached", "Confit", "Simmered"]
 
-food_type = ["rack of lamb", "salmon", "chicken breast", "pork tenderloin",
-  "root vegetable chutney", "filet mignon", "duck", "flank steak", "hamburger",
+food_type = ["Rack of Lamb", "Salmon", "Chicken Breast", "Pork Tenderloin",
+  "Root Vegetable Chutney", "Filet Mignon", "Duck", "Flank Steak", "Hamburger",
   "broccolini" ]
 # write menu parts: food_type, cooking_method, adjectives
 
@@ -19,7 +19,7 @@ menu_du_jour = cooking_method.shuffle.zip(adjectives.shuffle, food_type.shuffle)
 num = 1
 quest.times {
   plate_du_jour =  menu_du_jour[num - 1]
-  puts "#{num}. #{plate_du_jour[0].capitalize} #{plate_du_jour[1].capitalize} #{plate_du_jour[2].capitalize}"
+  puts "#{num}. #{plate_du_jour[0]} #{plate_du_jour[1]} #{plate_du_jour[2]}"
   num += 1
 }
 
